@@ -1,0 +1,6 @@
+framework module Pods_dunlao {
+  umbrella header "Pods-dunlao-umbrella.h"
+
+  export *
+  module * { export * }
+}

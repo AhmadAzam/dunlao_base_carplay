@@ -1,0 +1,13 @@
+//
+//  Config.xcconfig
+//  dunlao
+//
+//  Created by PhilipHayes on 11/10/2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+//DONT USE ANYTHING YOU DONT WANT APPEARING, EG STRINGS DONT NEED QUOTES TO WRAP THEM
+API_Credentials = BFE60024-DLR1-TESTIOS-FIVERR-5F034396927C|B0302AF1-B56A-44B7-9F95-3F4035A69E2D#52|
+API_AuthID = 2FCC30A5-2560-4121-9CEC-9E2780E731F9
+ 

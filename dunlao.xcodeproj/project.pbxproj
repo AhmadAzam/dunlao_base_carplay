@@ -7,23 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5120AEC28E5D5FF00529121 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5120AEB28E5D5FF00529121 /* MapViewController.swift */; };
+		C515578628E35FA500F38358 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C515578528E35FA500F38358 /* StartUpViewController.swift */; };
 		C5255D3B28DB6E01000A0B23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5255D3A28DB6E01000A0B23 /* AppDelegate.swift */; };
 		C5255D3D28DB6E01000A0B23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5255D3C28DB6E01000A0B23 /* SceneDelegate.swift */; };
-		C5255D3F28DB6E01000A0B23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5255D3E28DB6E01000A0B23 /* ViewController.swift */; };
 		C5255D4228DB6E01000A0B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5255D4028DB6E01000A0B23 /* Main.storyboard */; };
 		C5255D4428DB6E03000A0B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5255D4328DB6E03000A0B23 /* Assets.xcassets */; };
 		C5255D4728DB6E03000A0B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5255D4528DB6E03000A0B23 /* LaunchScreen.storyboard */; };
+		C5255D5328DB6F6E000A0B23 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C5255D5228DB6F6E000A0B23 /* Podfile */; };
+		C5276765290006E4008F63C0 /* verdana.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5276762290006E4008F63C0 /* verdana.ttf */; };
+		C5276766290006E4008F63C0 /* verdana-bold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5276763290006E4008F63C0 /* verdana-bold-italic.ttf */; };
+		C5276767290006E4008F63C0 /* verdana-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5276764290006E4008F63C0 /* verdana-bold.ttf */; };
+		C54A179328EB41E5004D94E7 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54A179228EB41E5004D94E7 /* Favourites.swift */; };
+		C54A179528EB4576004D94E7 /* SensorDataWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54A179428EB4576004D94E7 /* SensorDataWindow.swift */; };
+		C561B6A828F57CE600BD4A04 /* ManagementTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C561B6A728F57CE600BD4A04 /* ManagementTokenResponse.swift */; };
+		C561B6AB28F5B5CC00BD4A04 /* colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C561B6AA28F5B5CC00BD4A04 /* colours.xcassets */; };
+		C561B6AD28F5BB8B00BD4A04 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = C561B6AC28F5BB8B00BD4A04 /* K.swift */; };
+		C563E65C297FED3D00549F08 /* ManagementTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C561B6A728F57CE600BD4A04 /* ManagementTokenResponse.swift */; };
+		C563E65D297FED3D00549F08 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = C561B6AC28F5BB8B00BD4A04 /* K.swift */; };
+		C563E65E297FED3D00549F08 /* SensorDataWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54A179428EB4576004D94E7 /* SensorDataWindow.swift */; };
+		C563E65F297FED3D00549F08 /* SensorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56B01A728E48F4B0068064A /* SensorTableViewController.swift */; };
+		C563E660297FED3D00549F08 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566D5812912AA6E00FE38DC /* CarPlaySceneDelegate.swift */; };
+		C563E661297FED3D00549F08 /* CarPlayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F954C9291E8C94005DDC25 /* CarPlayHelper.swift */; };
+		C563E662297FED3D00549F08 /* InformationContentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572AC0C28F8162E008F2D1E /* InformationContentResponse.swift */; };
+		C563E663297FED3D00549F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5255D3A28DB6E01000A0B23 /* AppDelegate.swift */; };
+		C563E664297FED3D00549F08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5255D3C28DB6E01000A0B23 /* SceneDelegate.swift */; };
+		C563E665297FED3D00549F08 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5120AEB28E5D5FF00529121 /* MapViewController.swift */; };
+		C563E666297FED3D00549F08 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CC9F8628EF2854007FE30E /* AboutViewController.swift */; };
+		C563E667297FED3D00549F08 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54A179228EB41E5004D94E7 /* Favourites.swift */; };
+		C563E668297FED3D00549F08 /* OnStreetPOIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F954C7291E8BE6005DDC25 /* OnStreetPOIDelegate.swift */; };
+		C563E669297FED3D00549F08 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598EFC028DC5B93005DAF4A /* SensorData.swift */; };
+		C563E66A297FED3D00549F08 /* SensorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FCD6828E4A74800B518B1 /* SensorCell.swift */; };
+		C563E66B297FED3D00549F08 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C515578528E35FA500F38358 /* StartUpViewController.swift */; };
+		C563E66C297FED3D00549F08 /* LiveSensorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598EFC328DC5C6A005DAF4A /* LiveSensorResponse.swift */; };
+		C563E66E297FED3D00549F08 /* CarPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C566D5832912AC8F00FE38DC /* CarPlay.framework */; };
+		C563E670297FED3D00549F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5255D4528DB6E03000A0B23 /* LaunchScreen.storyboard */; };
+		C563E671297FED3D00549F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5255D4328DB6E03000A0B23 /* Assets.xcassets */; };
+		C563E672297FED3D00549F08 /* SensorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59FCD6928E4A74800B518B1 /* SensorCell.xib */; };
+		C563E673297FED3D00549F08 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C5255D5228DB6F6E000A0B23 /* Podfile */; };
+		C563E674297FED3D00549F08 /* verdana-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5276764290006E4008F63C0 /* verdana-bold.ttf */; };
+		C563E675297FED3D00549F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5255D4028DB6E01000A0B23 /* Main.storyboard */; };
+		C563E676297FED3D00549F08 /* verdana-bold-italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5276763290006E4008F63C0 /* verdana-bold-italic.ttf */; };
+		C563E677297FED3D00549F08 /* verdana.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5276762290006E4008F63C0 /* verdana.ttf */; };
+		C563E678297FED3D00549F08 /* colours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C561B6AA28F5B5CC00BD4A04 /* colours.xcassets */; };
+		C566D5822912AA6E00FE38DC /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566D5812912AA6E00FE38DC /* CarPlaySceneDelegate.swift */; };
+		C566D5842912AC8F00FE38DC /* CarPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C566D5832912AC8F00FE38DC /* CarPlay.framework */; };
+		C56B01A828E48F4B0068064A /* SensorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56B01A728E48F4B0068064A /* SensorTableViewController.swift */; };
+		C572AC0D28F8162E008F2D1E /* InformationContentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C572AC0C28F8162E008F2D1E /* InformationContentResponse.swift */; };
+		C598EFC128DC5B93005DAF4A /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598EFC028DC5B93005DAF4A /* SensorData.swift */; };
+		C598EFC428DC5C6A005DAF4A /* LiveSensorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C598EFC328DC5C6A005DAF4A /* LiveSensorResponse.swift */; };
+		C59FCD6A28E4A74800B518B1 /* SensorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59FCD6828E4A74800B518B1 /* SensorCell.swift */; };
+		C59FCD6B28E4A74800B518B1 /* SensorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C59FCD6928E4A74800B518B1 /* SensorCell.xib */; };
+		C5CC9F8728EF2854007FE30E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CC9F8628EF2854007FE30E /* AboutViewController.swift */; };
+		C5F954C8291E8BE6005DDC25 /* OnStreetPOIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F954C7291E8BE6005DDC25 /* OnStreetPOIDelegate.swift */; };
+		C5F954CA291E8C94005DDC25 /* CarPlayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F954C9291E8C94005DDC25 /* CarPlayHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A97BF6E80AD5B3BFA51E8BC /* Pods-dunlao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dunlao.debug.xcconfig"; path = "Target Support Files/Pods-dunlao/Pods-dunlao.debug.xcconfig"; sourceTree = "<group>"; };
+		4CDE0794205924D0122E2886 /* Pods-dunlao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dunlao.release.xcconfig"; path = "Target Support Files/Pods-dunlao/Pods-dunlao.release.xcconfig"; sourceTree = "<group>"; };
+		A1D21600E885D13A6557D566 /* Pods_dunlao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dunlao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5074F6428DC7516004F7DFC /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5120AEB28E5D5FF00529121 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C515578528E35FA500F38358 /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
 		C5255D3728DB6E01000A0B23 /* dunlao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dunlao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5255D3A28DB6E01000A0B23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5255D3C28DB6E01000A0B23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C5255D3E28DB6E01000A0B23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C5255D4128DB6E01000A0B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5255D4328DB6E03000A0B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5255D4628DB6E03000A0B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5255D4828DB6E03000A0B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5255D5228DB6F6E000A0B23 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C5276762290006E4008F63C0 /* verdana.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = verdana.ttf; sourceTree = "<group>"; };
+		C5276763290006E4008F63C0 /* verdana-bold-italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "verdana-bold-italic.ttf"; sourceTree = "<group>"; };
+		C5276764290006E4008F63C0 /* verdana-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "verdana-bold.ttf"; sourceTree = "<group>"; };
+		C54A179228EB41E5004D94E7 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
+		C54A179428EB4576004D94E7 /* SensorDataWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorDataWindow.swift; sourceTree = "<group>"; };
+		C561B6A728F57CE600BD4A04 /* ManagementTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagementTokenResponse.swift; sourceTree = "<group>"; };
+		C561B6A928F5B03B00BD4A04 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		C561B6AA28F5B5CC00BD4A04 /* colours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = colours.xcassets; sourceTree = "<group>"; };
+		C561B6AC28F5BB8B00BD4A04 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		C563E67D297FED3D00549F08 /* dunlao copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dunlao copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C563E67E297FED3D00549F08 /* dunlao copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "dunlao copy-Info.plist"; path = "/Users/philiphayes/Documents/apps/dunlao_base_carplay/dunlao copy-Info.plist"; sourceTree = "<absolute>"; };
+		C566D57F2912A89C00FE38DC /* dunlao.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = dunlao.entitlements; sourceTree = "<group>"; };
+		C566D5812912AA6E00FE38DC /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
+		C566D5832912AC8F00FE38DC /* CarPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarPlay.framework; path = System/Library/Frameworks/CarPlay.framework; sourceTree = SDKROOT; };
+		C56B01A728E48F4B0068064A /* SensorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorTableViewController.swift; sourceTree = "<group>"; };
+		C572AC0C28F8162E008F2D1E /* InformationContentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationContentResponse.swift; sourceTree = "<group>"; };
+		C598EFC028DC5B93005DAF4A /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
+		C598EFC328DC5C6A005DAF4A /* LiveSensorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSensorResponse.swift; sourceTree = "<group>"; };
+		C59FCD6828E4A74800B518B1 /* SensorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorCell.swift; sourceTree = "<group>"; };
+		C59FCD6928E4A74800B518B1 /* SensorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SensorCell.xib; sourceTree = "<group>"; };
+		C5CC9F8628EF2854007FE30E /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		C5F954C7291E8BE6005DDC25 /* OnStreetPOIDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnStreetPOIDelegate.swift; sourceTree = "<group>"; };
+		C5F954C9291E8C94005DDC25 /* CarPlayHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +108,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C566D5842912AC8F00FE38DC /* CarPlay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C563E66D297FED3D00549F08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C563E66E297FED3D00549F08 /* CarPlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		522CA331BDE44797084C59FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A97BF6E80AD5B3BFA51E8BC /* Pods-dunlao.debug.xcconfig */,
+				4CDE0794205924D0122E2886 /* Pods-dunlao.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C5074F6328DC7516004F7DFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C566D5832912AC8F00FE38DC /* CarPlay.framework */,
+				C5074F6428DC7516004F7DFC /* SideMenu.framework */,
+				A1D21600E885D13A6557D566 /* Pods_dunlao.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C5255D2E28DB6E01000A0B23 = {
 			isa = PBXGroup;
 			children = (
+				C5255D5228DB6F6E000A0B23 /* Podfile */,
 				C5255D3928DB6E01000A0B23 /* dunlao */,
 				C5255D3828DB6E01000A0B23 /* Products */,
+				522CA331BDE44797084C59FF /* Pods */,
+				C5074F6328DC7516004F7DFC /* Frameworks */,
+				C563E67E297FED3D00549F08 /* dunlao copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				C5255D3728DB6E01000A0B23 /* dunlao.app */,
+				C563E67D297FED3D00549F08 /* dunlao copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +166,76 @@
 		C5255D3928DB6E01000A0B23 /* dunlao */ = {
 			isa = PBXGroup;
 			children = (
+				C566D5802912AA5900FE38DC /* CarPlay */,
+				C566D57F2912A89C00FE38DC /* dunlao.entitlements */,
+				C5276761290006BF008F63C0 /* Fonts */,
+				C561B6AA28F5B5CC00BD4A04 /* colours.xcassets */,
+				C59FCD6728E4A6FF00B518B1 /* SubViews */,
+				C598EFC228DC5C3F005DAF4A /* Model */,
+				C5255D5428DB7087000A0B23 /* DataService */,
 				C5255D3A28DB6E01000A0B23 /* AppDelegate.swift */,
 				C5255D3C28DB6E01000A0B23 /* SceneDelegate.swift */,
-				C5255D3E28DB6E01000A0B23 /* ViewController.swift */,
 				C5255D4028DB6E01000A0B23 /* Main.storyboard */,
 				C5255D4328DB6E03000A0B23 /* Assets.xcassets */,
 				C5255D4528DB6E03000A0B23 /* LaunchScreen.storyboard */,
 				C5255D4828DB6E03000A0B23 /* Info.plist */,
+				C515578528E35FA500F38358 /* StartUpViewController.swift */,
+				C56B01A728E48F4B0068064A /* SensorTableViewController.swift */,
+				C5120AEB28E5D5FF00529121 /* MapViewController.swift */,
+				C5CC9F8628EF2854007FE30E /* AboutViewController.swift */,
+				C561B6A928F5B03B00BD4A04 /* Config.xcconfig */,
+				C561B6AC28F5BB8B00BD4A04 /* K.swift */,
 			);
 			path = dunlao;
+			sourceTree = "<group>";
+		};
+		C5255D5428DB7087000A0B23 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				C598EFC028DC5B93005DAF4A /* SensorData.swift */,
+				C54A179228EB41E5004D94E7 /* Favourites.swift */,
+				C54A179428EB4576004D94E7 /* SensorDataWindow.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		C5276761290006BF008F63C0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C5276763290006E4008F63C0 /* verdana-bold-italic.ttf */,
+				C5276764290006E4008F63C0 /* verdana-bold.ttf */,
+				C5276762290006E4008F63C0 /* verdana.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C566D5802912AA5900FE38DC /* CarPlay */ = {
+			isa = PBXGroup;
+			children = (
+				C566D5812912AA6E00FE38DC /* CarPlaySceneDelegate.swift */,
+				C5F954C7291E8BE6005DDC25 /* OnStreetPOIDelegate.swift */,
+				C5F954C9291E8C94005DDC25 /* CarPlayHelper.swift */,
+			);
+			path = CarPlay;
+			sourceTree = "<group>";
+		};
+		C598EFC228DC5C3F005DAF4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C598EFC328DC5C6A005DAF4A /* LiveSensorResponse.swift */,
+				C561B6A728F57CE600BD4A04 /* ManagementTokenResponse.swift */,
+				C572AC0C28F8162E008F2D1E /* InformationContentResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C59FCD6728E4A6FF00B518B1 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				C59FCD6828E4A74800B518B1 /* SensorCell.swift */,
+				C59FCD6928E4A74800B518B1 /* SensorCell.xib */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5255D4B28DB6E03000A0B23 /* Build configuration list for PBXNativeTarget "dunlao" */;
 			buildPhases = (
+				2706DF9F718BB5A7BDFE0637 /* [CP] Check Pods Manifest.lock */,
 				C5255D3328DB6E01000A0B23 /* Sources */,
 				C5255D3428DB6E01000A0B23 /* Frameworks */,
 				C5255D3528DB6E01000A0B23 /* Resources */,
+				BA86E413796378A757A24716 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -85,6 +258,25 @@
 			name = dunlao;
 			productName = dunlao;
 			productReference = C5255D3728DB6E01000A0B23 /* dunlao.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C563E659297FED3D00549F08 /* dunlao copy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C563E67A297FED3D00549F08 /* Build configuration list for PBXNativeTarget "dunlao copy" */;
+			buildPhases = (
+				C563E65A297FED3D00549F08 /* [CP] Check Pods Manifest.lock */,
+				C563E65B297FED3D00549F08 /* Sources */,
+				C563E66D297FED3D00549F08 /* Frameworks */,
+				C563E66F297FED3D00549F08 /* Resources */,
+				C563E679297FED3D00549F08 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dunlao copy";
+			productName = dunlao;
+			productReference = C563E67D297FED3D00549F08 /* dunlao copy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,6 +308,7 @@
 			projectRoot = "";
 			targets = (
 				C5255D3628DB6E01000A0B23 /* dunlao */,
+				C563E659297FED3D00549F08 /* dunlao copy */,
 			);
 		};
 /* End PBXProject section */
@@ -127,20 +320,161 @@
 			files = (
 				C5255D4728DB6E03000A0B23 /* LaunchScreen.storyboard in Resources */,
 				C5255D4428DB6E03000A0B23 /* Assets.xcassets in Resources */,
+				C59FCD6B28E4A74800B518B1 /* SensorCell.xib in Resources */,
+				C5255D5328DB6F6E000A0B23 /* Podfile in Resources */,
+				C5276767290006E4008F63C0 /* verdana-bold.ttf in Resources */,
 				C5255D4228DB6E01000A0B23 /* Main.storyboard in Resources */,
+				C5276766290006E4008F63C0 /* verdana-bold-italic.ttf in Resources */,
+				C5276765290006E4008F63C0 /* verdana.ttf in Resources */,
+				C561B6AB28F5B5CC00BD4A04 /* colours.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C563E66F297FED3D00549F08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C563E670297FED3D00549F08 /* LaunchScreen.storyboard in Resources */,
+				C563E671297FED3D00549F08 /* Assets.xcassets in Resources */,
+				C563E672297FED3D00549F08 /* SensorCell.xib in Resources */,
+				C563E673297FED3D00549F08 /* Podfile in Resources */,
+				C563E674297FED3D00549F08 /* verdana-bold.ttf in Resources */,
+				C563E675297FED3D00549F08 /* Main.storyboard in Resources */,
+				C563E676297FED3D00549F08 /* verdana-bold-italic.ttf in Resources */,
+				C563E677297FED3D00549F08 /* verdana.ttf in Resources */,
+				C563E678297FED3D00549F08 /* colours.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2706DF9F718BB5A7BDFE0637 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dunlao-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA86E413796378A757A24716 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dunlao/Pods-dunlao-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dunlao/Pods-dunlao-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dunlao/Pods-dunlao-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C563E65A297FED3D00549F08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dunlao-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C563E679297FED3D00549F08 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dunlao/Pods-dunlao-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dunlao/Pods-dunlao-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dunlao/Pods-dunlao-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5255D3328DB6E01000A0B23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5255D3F28DB6E01000A0B23 /* ViewController.swift in Sources */,
+				C561B6A828F57CE600BD4A04 /* ManagementTokenResponse.swift in Sources */,
+				C561B6AD28F5BB8B00BD4A04 /* K.swift in Sources */,
+				C54A179528EB4576004D94E7 /* SensorDataWindow.swift in Sources */,
+				C56B01A828E48F4B0068064A /* SensorTableViewController.swift in Sources */,
+				C566D5822912AA6E00FE38DC /* CarPlaySceneDelegate.swift in Sources */,
+				C5F954CA291E8C94005DDC25 /* CarPlayHelper.swift in Sources */,
+				C572AC0D28F8162E008F2D1E /* InformationContentResponse.swift in Sources */,
 				C5255D3B28DB6E01000A0B23 /* AppDelegate.swift in Sources */,
 				C5255D3D28DB6E01000A0B23 /* SceneDelegate.swift in Sources */,
+				C5120AEC28E5D5FF00529121 /* MapViewController.swift in Sources */,
+				C5CC9F8728EF2854007FE30E /* AboutViewController.swift in Sources */,
+				C54A179328EB41E5004D94E7 /* Favourites.swift in Sources */,
+				C5F954C8291E8BE6005DDC25 /* OnStreetPOIDelegate.swift in Sources */,
+				C598EFC128DC5B93005DAF4A /* SensorData.swift in Sources */,
+				C59FCD6A28E4A74800B518B1 /* SensorCell.swift in Sources */,
+				C515578628E35FA500F38358 /* StartUpViewController.swift in Sources */,
+				C598EFC428DC5C6A005DAF4A /* LiveSensorResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C563E65B297FED3D00549F08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C563E65C297FED3D00549F08 /* ManagementTokenResponse.swift in Sources */,
+				C563E65D297FED3D00549F08 /* K.swift in Sources */,
+				C563E65E297FED3D00549F08 /* SensorDataWindow.swift in Sources */,
+				C563E65F297FED3D00549F08 /* SensorTableViewController.swift in Sources */,
+				C563E660297FED3D00549F08 /* CarPlaySceneDelegate.swift in Sources */,
+				C563E661297FED3D00549F08 /* CarPlayHelper.swift in Sources */,
+				C563E662297FED3D00549F08 /* InformationContentResponse.swift in Sources */,
+				C563E663297FED3D00549F08 /* AppDelegate.swift in Sources */,
+				C563E664297FED3D00549F08 /* SceneDelegate.swift in Sources */,
+				C563E665297FED3D00549F08 /* MapViewController.swift in Sources */,
+				C563E666297FED3D00549F08 /* AboutViewController.swift in Sources */,
+				C563E667297FED3D00549F08 /* Favourites.swift in Sources */,
+				C563E668297FED3D00549F08 /* OnStreetPOIDelegate.swift in Sources */,
+				C563E669297FED3D00549F08 /* SensorData.swift in Sources */,
+				C563E66A297FED3D00549F08 /* SensorCell.swift in Sources */,
+				C563E66B297FED3D00549F08 /* StartUpViewController.swift in Sources */,
+				C563E66C297FED3D00549F08 /* LiveSensorResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +502,7 @@
 /* Begin XCBuildConfiguration section */
 		C5255D4928DB6E03000A0B23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C561B6A928F5B03B00BD4A04 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -228,6 +563,7 @@
 		};
 		C5255D4A28DB6E03000A0B23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C561B6A928F5B03B00BD4A04 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -282,55 +618,167 @@
 		};
 		C5255D4C28DB6E03000A0B23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A97BF6E80AD5B3BFA51E8BC /* Pods-dunlao.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CODE_SIGN_ENTITLEMENTS = dunlao/dunlao.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 2XT4A5CZUP;
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = dunlao/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dun Laoghaire";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "By accessing your locaiton, this app can help you locate spaces near you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.parkmagic.dunlao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C5255D4D28DB6E03000A0B23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CDE0794205924D0122E2886 /* Pods-dunlao.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CODE_SIGN_ENTITLEMENTS = dunlao/dunlao.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 2XT4A5CZUP;
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = dunlao/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Dun Laoghaire";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "By accessing your locaiton, this app can help you locate spaces near you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.4;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.parkmagic.dunlao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C563E67B297FED3D00549F08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A97BF6E80AD5B3BFA51E8BC /* Pods-dunlao.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CODE_SIGN_ENTITLEMENTS = dunlao/dunlao.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 2XT4A5CZUP;
+				EXCLUDED_ARCHS = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "dunlao copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dun Laoghaire";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "By accessing your locaiton, this app can help you locate spaces near you";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parkmagic.dunlao;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C563E67C297FED3D00549F08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CDE0794205924D0122E2886 /* Pods-dunlao.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_STATIC_ANALYZER_MODE = deep;
+				CODE_SIGN_ENTITLEMENTS = dunlao/dunlao.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 2XT4A5CZUP;
+				EXCLUDED_ARCHS = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "dunlao copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dun Laoghaire";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "By accessing your locaiton, this app can help you locate spaces near you";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.parkmagic.dunlao;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -351,6 +799,15 @@
 			buildConfigurations = (
 				C5255D4C28DB6E03000A0B23 /* Debug */,
 				C5255D4D28DB6E03000A0B23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C563E67A297FED3D00549F08 /* Build configuration list for PBXNativeTarget "dunlao copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C563E67B297FED3D00549F08 /* Debug */,
+				C563E67C297FED3D00549F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

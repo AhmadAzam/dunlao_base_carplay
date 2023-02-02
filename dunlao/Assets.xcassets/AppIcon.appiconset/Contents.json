@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "Logo_DLR_RGB_Big.png",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"

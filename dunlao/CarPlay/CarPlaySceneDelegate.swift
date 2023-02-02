@@ -34,9 +34,9 @@ class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegate {
         var rootTemplate = CreateGridTemplate() ?? nil
         //  Set the root template to be the grid template
         interfaceController.setRootTemplate(rootTemplate!, animated: true)
-       
+    
         //seperate timer every 30 seconds
-        self.timer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true, block: { _ in
+        self.timer = Timer.scheduledTimer(withTimeInterval: 600, repeats: true, block: { _ in
             self.updateToken()//update token and refresh the favs list statuses
         })
     }
@@ -79,15 +79,18 @@ class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegate {
 
     private func ShowOnStreetTemplate() {
         //  Populate list of on street poi
-        let poiList =  PopulateOnStreetPOI()
+        PopulateOnStreetPOI { [self] poiList in
+            
+            var onStreetPOITemplate = CPPointOfInterestTemplate(title: "Sensor List", pointsOfInterest: poiList, selectedIndex: 0)
+            //  You need to assign the delegate whcih is responsible for map changes
+            onStreetPOITemplate.pointOfInterestDelegate = OnStreetPOIDelegate(_uiScence, _interfaceController)
+            //  Show the on street poi template
+            _interfaceController.pushTemplate(onStreetPOITemplate, animated: false)
+        }
         //  Put the template together
-        var onStreetPOITemplate = CPPointOfInterestTemplate(title: "Sensor List", pointsOfInterest: poiList, selectedIndex: 0)
-        //  You need to assign the delegate whcih is responsible for map changes
-        onStreetPOITemplate.pointOfInterestDelegate = OnStreetPOIDelegate(_uiScence, _interfaceController)
-        //  Show the on street poi template
-        _interfaceController.pushTemplate(onStreetPOITemplate, animated: false)
+        
     }
-    
+    //completion: @escaping((CPTemplate,Bool) -> void)
     func AsyncLoadData(){
         let dispatchGroup = DispatchGroup()
         let db = SensorData()
@@ -134,14 +137,14 @@ class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegate {
              
             print("Tasks complete")
             
-            
         }
     }
 
+
     // #region Polulate On Street
-    public func PopulateOnStreetPOI() -> [CPPointOfInterest] {
+    public func PopulateOnStreetPOI(completion: @escaping([CPPointOfInterest]) -> Void) {
         //  The returned class
-        var masterList = [CPPointOfInterest]() 
+        var masterList = [CPPointOfInterest]()
         do {
             //  Call the viewmodel which calls the api to return a list all parkmagic zones
             var r = listSensors
@@ -151,7 +154,7 @@ class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegate {
                 //  Skip out zones where lat and lng are empty
                 for item in r!.sensorList {
                     //  Perform mapkit actions on the ui thread - crash otherwise
-                    DispatchQueue.main.async (execute: {
+//                    DispatchQueue.async (execute: {
                         //  Set the location for the poi
                         var loc = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: Double(item.sensorGPSPosition.latititude), longitude: Double(item.sensorGPSPosition.longitude))))
                         //  Used for google map directions when used
@@ -178,8 +181,11 @@ class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegate {
                         poi.secondaryButton = secondaryBtn
                         //  Add the poi to the master list
                         masterList.append(poi)
+                    DispatchQueue.main.async (execute: {
+                        completion(masterList)
                     })
                 }
+                
             } else {
                 CPH.ShowAlert(_interfaceController, r?.status.response)
             }
@@ -189,7 +195,8 @@ class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegate {
             
             CPH.ShowAlert(_interfaceController, error.localizedDescription)
         }
-        return masterList
+//        return masterList
+       
     }
 
     // #endregion

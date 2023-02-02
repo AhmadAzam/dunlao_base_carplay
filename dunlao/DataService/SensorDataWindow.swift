@@ -115,7 +115,7 @@ struct SensorDataWindow{
             awayText = ""
         }
         
-        r = s.sensorType.sensorType.rawValue + " Space " + sDistance + awayText
+        r = s.sensorType.sensorType + " Space " + sDistance + awayText
         
         return r
     }

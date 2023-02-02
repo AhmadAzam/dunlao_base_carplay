@@ -1,5 +1,5 @@
 import Foundation
-
+var refreshToken: Bool = false
 struct SensorData{
     
 
@@ -50,8 +50,9 @@ struct SensorData{
         print(K.baseURLString)
         var token = ""
         print (jsonAccessToken)
-        if jsonAccessToken != nil && !(jsonAccessToken ?? "").isEmpty
-        {
+        if jsonAccessToken != nil && !(jsonAccessToken ?? "").isEmpty {
+        
+//        if refreshToken {
             let jsonAccessClass = defaults.string(forKey: K.defaultTokenClassName)
           
             let jsonDecoder = JSONDecoder()
@@ -62,7 +63,8 @@ struct SensorData{
             var accessClass = try! JSONDecoder().decode(ManagementTokenResponse.self, from: jsonData)
             let date = Date()
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+            dateFormatter.timeZone = NSTimeZone(name: "GMT") as TimeZone?
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
             
             let newTDateString = accessClass.expiryDate.replacingOccurrences(of: " ", with: "T", options: .literal, range: nil)
             let expirydate = dateFormatter.date(from: newTDateString)
@@ -71,7 +73,7 @@ struct SensorData{
             print("cur date")
             print (date)
             if(expirydate! <= date){
-                
+
                 UserDefaults.standard.set("" , forKey: K.defaultTokenGUID)//zero token
                 //fetch it again
                 print("token expired!!!!!!!!!!! try again")
@@ -102,7 +104,7 @@ struct SensorData{
                 
                  
             })
-           
+            refreshToken = true
             return token
         }
     }

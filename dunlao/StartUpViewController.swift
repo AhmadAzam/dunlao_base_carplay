@@ -56,7 +56,7 @@ class StartUpViewController: UIViewController , CLLocationManagerDelegate, GMSMa
         
      
         //seperate timer every 30 seconds
-        self.timer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true, block: { _ in
+        self.timer = Timer.scheduledTimer(withTimeInterval: 600, repeats: true, block: { _ in
             self.updateToken()//update token and refresh the favs list statuses
         })
         

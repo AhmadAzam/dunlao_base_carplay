@@ -48,7 +48,7 @@ struct SensorStatus: Codable {
 // MARK: - SensorTypeClass
 struct SensorTypeClass: Codable {
     var sensorTypeID: Int
-    var sensorType: SensorTypeEnum
+    var sensorType: String
 }
 
 enum SensorTypeEnum: String, Codable {

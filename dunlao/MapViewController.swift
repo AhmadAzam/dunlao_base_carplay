@@ -250,7 +250,7 @@ let locationManager = CLLocationManager()
                 
                 var myData = Dictionary<String,String>()
                 myData["title"] = item.sensorExtraInformation.title
-                myData["type"] = item.sensorType.sensorType.rawValue
+                myData["type"] = item.sensorType.sensorType
                 myData["desc"] = "" //item.sensorExtraInformation./.title
                 myData["date"] = item.sensorStatus.lastChangedState//.replacingCharacters(in: "T", with: " ")
                 myData["sensorID"] = String(item.sensorID)
